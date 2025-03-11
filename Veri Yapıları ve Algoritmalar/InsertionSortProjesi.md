@@ -1,5 +1,7 @@
 # Insertion Sort Projesi
+
 Author: Ömer Tuğra Altungök
+
 Bu Dosya [Veri Yapıları Ve Algoritmarı](https://academy.patika.dev/courses/veri-yapilari-ve-algoritmalar) dersinin [Insertion Sort Ödevini](https://academy.patika.dev/courses/veri-yapilari-ve-algoritmalar/insertion-sort-proje) içeriyor.
 
 ***
@@ -9,11 +11,15 @@ Bu Dosya [Veri Yapıları Ve Algoritmarı](https://academy.patika.dev/courses/ve
 1. Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
 
 - **Yanıt**
->[*2*,27,16,22,18,6]
->[2,*6*,16,22,18,27]
->[2,6,*16*,22,18,27]
->[2,6,16,*18*,22,27]
->[2,6,16,18,*22*,27]
+[*2*,27,16,22,18,6]
+
+[2,*6*,16,22,18,27]
+
+[2,6,*16*,22,18,27]
+
+[2,6,16,*18*,22,27]
+
+[2,6,16,18,*22*,27]
 
 ***
 
@@ -40,7 +46,10 @@ Average case
 4. dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
 
 - **Yanıt**
->[*2*,3,5,8,7,9,4,15,6]
->[*2,3*,5,8,7,9,4,15,6]
->[*2,3,4*,8,7,9,5,15,6]
->[*2,3,4,5*,7,9,8,15,6]
+[*2*,3,5,8,7,9,4,15,6]
+
+[*2,3*,5,8,7,9,4,15,6]
+
+[*2,3,4*,8,7,9,5,15,6]
+
+[*2,3,4,5*,7,9,8,15,6]
