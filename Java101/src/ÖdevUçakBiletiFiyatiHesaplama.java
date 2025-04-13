@@ -19,26 +19,26 @@ public class ÖdevUçakBiletiFiyatiHesaplama {
         Scanner input = new Scanner(System.in);
         float km, normalTutar = 0, yaşİndirimi = 0, yaşİndirimiUygulanmişTutar = 0,
         gidişDönüşİndirimi = 0, gidişDönüşİndirimiUygulanmişlitutar = 0;
-        boolean isError = false;
+
 
         System.out.print("Mesafeyi km türünden giriniz : ");
         km = input.nextFloat();
         if (km < 1) {
-            isError = true;
+            System.out.print("Hatalı Veri Girdiniz !");
         }
 
         System.out.print("Yaşınızı giriniz : ");
         int yaş = input.nextInt();
         if (yaş < 1) {
-            isError = true;
+            System.out.print("Hatalı Veri Girdiniz !");
         }
 
         System.out.print("Yolculuk tipini giriniz (1 => Tek Yön , 2 => Gidiş Dönüş ) : ");
         int yolculukTipi = input.nextInt();
         if ((yolculukTipi == 1) || (yolculukTipi == 2)) {
-            isError = false;
+
         } else {
-            isError = true;
+            System.out.print("Hatalı Veri Girdiniz !");
         }
 
         normalTutar = (float) (km * 0.10);
@@ -68,10 +68,6 @@ public class ÖdevUçakBiletiFiyatiHesaplama {
                 }
                 System.out.println("Gidiş Dönüş Bilet İndirimi uygulanmış tutar = " + gidişDönüşİndirimiUygulanmişlitutar);
                 break;
-        }
-
-        if (isError){
-            System.out.print("Hatalı Veri Girdiniz !");
         }
 
     }
