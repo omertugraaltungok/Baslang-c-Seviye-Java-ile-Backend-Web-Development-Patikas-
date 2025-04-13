@@ -70,5 +70,9 @@ public class ÖdevUçakBiletiFiyatiHesaplama {
                 break;
         }
 
+        if (isError){
+            System.out.print("Hatalı Veri Girdiniz !");
+        }
+
     }
 }
