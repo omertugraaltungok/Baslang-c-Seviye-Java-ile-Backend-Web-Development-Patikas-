@@ -4,6 +4,15 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class MineSweeper {
+        static Scanner scanner = new Scanner(System.in);
+        static Random rand = new Random();
+        int row;
+        int col;
+        int mineCount;
+        char[][] board;
+        char[][] visibleBoard;
+
+
 
     MineSweeper(int row, int col) {
         while ((row < 2) || (col < 2)) {
@@ -11,11 +20,12 @@ public class MineSweeper {
             break;
         }
 
-        Scanner scanner = new Scanner(System.in);
-        Random rand = new Random();
-        int mineCount = (row * col) / 4;
-        char[][] board = new char[row][col];
-        char[][] visibleBoard = new char[row][col];
+        this.row = row;
+        this.col = col;
+
+        mineCount = (row * col) / 4;
+        board = new char[row][col];
+        visibleBoard = new char[row][col];
 
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
